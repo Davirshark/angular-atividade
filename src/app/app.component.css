@@ -1,3 +1,8 @@
 .interaction:hover {
     color: blue;
+    cursor: pointer 
+}
+
+.cadastro {
+    padding-bottom: 10px;
 }

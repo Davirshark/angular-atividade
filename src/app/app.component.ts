@@ -8,9 +8,20 @@ import { Cliente } from './cliente.class';
 })
 
 export class AppComponent {
-    clientes = [
-     new Cliente ("1", "Davi", 21),
-     new Cliente ("2", "Elias", 44)
-    ];
+  nome = "";
+  idade = 0;
+
+  clientes = [
+    new Cliente( "Davi", 21),
+    new Cliente( "Elias", 44)
+  ];
+
+  salvar() {
+    const d = new Cliente(this.nome, this.idade);
+    this.clientes.push(d);
+    this.nome = "";
+    this.idade = 0;
   }
+}
+
 
